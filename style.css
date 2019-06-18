@@ -3,7 +3,6 @@
 body {
     background: #F7F5D7;
     margin: 0;
-
 }
 
 h1 {
@@ -32,12 +31,27 @@ p {
 
 /* HEADER */
 
+.logo_container {
+    position: absolute;
+}
+
+.logo2 {
+    margin: 0px 0px 0px 110px;
+}
+
+.logo3 {
+    margin: 20px 0px 0px 160px;
+}
+
+
 header h1 {
     color: #F4C0BA;
     margin-left: 20px;
     margin-top: 17px;
-    font-family: 'overskrift';
+    font-family: 'Lato', sans-serif;
     font-style: italic;
+    font-size: 32px;
+
 }
 
 .sectionwrapper {
@@ -50,10 +64,6 @@ nav {
     color: black;
     display: flex;
     list-style-type: none;
-    /*
-    margin: 0;
-    padding: 0;
-*/
     position: absolute;
     top: 0px;
     right: 0px;
@@ -71,7 +81,6 @@ nav {
 /* BURGERMENU */
 
 .hidden {
-    /*    display: none;*/
     transform: translateX(-100%);
     opacity: 0;
 }
@@ -110,7 +119,8 @@ nav {
     font-family: 'burgermenu';
     font-size: 30px;
     z-index: 1;
-
+    color: dimgrey;
+    cursor: pointer;
 
 }
 
@@ -130,7 +140,7 @@ header li a {
 }
 
 .tekst {
-    color: black;
+    color: dimgrey;
     font-size: 20px;
     font-weight: 900;
     font-style: italic;
@@ -140,10 +150,18 @@ header li a {
     margin: 16px 40px;
 }
 
+.tekst:hover {
+    color: #F4C0BA;
+}
+
+.tekst2:hover {
+    color: #F4C0BA;
+}
+
 .tekst2 {
     margin: 16px 40px;
     font-weight: 900;
-    color: black;
+    color: dimgrey;
     font-size: 20px;
     font-style: italic;
     letter-spacing: 0.5px;
@@ -187,6 +205,13 @@ header li a {
 
 }
 
+.facebook:hover {
+    transform: scale(1.1);
+}
+
+.instagram:hover {
+    transform: scale(1.1);
+}
 
 /* PORTFOLIO */
 
@@ -203,7 +228,7 @@ header li a {
 #portfolio .col {
     flex-grow: 1;
     flex-basis: 400px;
-    margin: 8px 8px 8px 8px;
+    margin: 10px 10px 10px 10px;
     background-color: white;
     padding: 15px;
     box-shadow: 3px 4px 10px -1px;
@@ -211,6 +236,10 @@ header li a {
     max-width: 370px;
     z-index: 600;
 
+}
+
+#portfolio .col:hover {
+    transform: scale(1.05);
 }
 
 #portfolio img {
@@ -233,7 +262,6 @@ header li a {
     flex-wrap: wrap;
     height: 230px;
     border-radius: 20px;
-    /*    justify-content: center;*/
     align-items: center;
 }
 
@@ -256,7 +284,6 @@ header li a {
 .col a {
 
     text-decoration: none;
-    /*    text-align: center;*/
     letter-spacing: 0.5px;
 
 }
@@ -366,7 +393,6 @@ a {
 .col_container {
     display: flex;
     flex-wrap: wrap;
-    /*    justify-content: flex-end;*/
 }
 
 .farveboks_blaa {
@@ -376,9 +402,6 @@ a {
     height: 390px;
     background: #D1E5EF;
     border-radius: 20px;
-    /*    display: flex;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
 }
 
 .farveboks_gul {
@@ -388,11 +411,6 @@ a {
     height: 500px;
     background: #F7F5D7;
     border-radius: 20px;
-    /*    display: flex;*/
-    /*
-    justify-content: center;
-    align-items: center;
-*/
 }
 
 .farveboks_pink {
@@ -402,11 +420,6 @@ a {
     height: 460px;
     background: #FBDAD4;
     border-radius: 20px;
-    /*    display: flex;*/
-    /*
-    justify-content: center;
-    align-items: center;
-*/
 }
 
 .farveboks_groen {
@@ -416,11 +429,6 @@ a {
     height: 450px;
     background: #D7E9D1;
     border-radius: 20px;
-    /*    display: flex;*/
-    /*
-    justify-content: center;
-    align-items: center;
-*/
 }
 
 /* KNAPPER */
@@ -433,6 +441,22 @@ a {
     width: 86%;
 }
 
+.knap:hover {
+    transform: scale(1.05);
+}
+
+.knap2:hover {
+    transform: scale(1.05);
+}
+
+.knap3:hover {
+    transform: scale(1.05);
+}
+
+.knap4:hover {
+    transform: scale(1.05);
+}
+
 .knap {
     margin: 10px;
     height: 35px;
@@ -440,19 +464,15 @@ a {
     background: #D1E5EF;
     border-radius: 5px;
     box-shadow: 3px 4px 10px -1px;
-    /*    text-align: center;*/
-
 }
 
-.knap1 {
+.knap2 {
     margin: 10px;
     height: 35px;
     width: 200px;
     background: #FBDAD4;
     border-radius: 5px;
     box-shadow: 3px 4px 10px -1px;
-    /*    text-align: center;*/
-
 }
 
 .knap3 {
@@ -462,8 +482,6 @@ a {
     background: #D7E9D1;
     border-radius: 5px;
     box-shadow: 3px 4px 10px -1px;
-    /*    text-align: center;*/
-
 }
 
 .knap4 {
@@ -473,8 +491,6 @@ a {
     background: white;
     border-radius: 5px;
     box-shadow: 3px 4px 10px -1px;
-    /*    text-align: center;*/
-
 }
 
 @font-face {
@@ -490,8 +506,34 @@ a {
         url('font/overskrift.woff') format('woff');
 }
 
+@media only screen and (min-width: 1200px) {
 
-@media only screen and (min-width: 600px) {
+    .logo_container {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .logo1 {
+        margin: 10px 25px 0px 10px;
+    }
+
+    .logo2 {
+        margin: 10px 25px 0px 10px;
+    }
+
+    .logo3 {
+        margin: 10px 25px 10px 10px;
+    }
+
+}
+
+@media only screen and (min-width: 670px) {
+
+    header h1 {
+        font-size: 45px;
+    }
+
     #menuknap {
         display: none;
     }
@@ -525,23 +567,10 @@ a {
 
     }
 
-    /*
-    .tekst {
-        color: black;
-        font-size: 20px;
-        font-weight: 900;
-        font-style: italic;
-        letter-spacing: 0.5px;
-        font-family: 'Lato', sans-serif;
-        text-align: center;
-    }
-*/
-
-
     .tekst2 {
         margin: 16px 14px;
         font-weight: 900;
-        color: black;
+        color: dimgrey;
         font-size: 20px;
         font-style: italic;
         letter-spacing: 0.5px;
@@ -549,12 +578,9 @@ a {
         text-align: center;
     }
 
-
-    /*
-    #burgermenu img {
-        display: none;
+    .tekst2:hover {
+        color: #F4C0BA;
     }
-*/
 
     .pil {
         position: fixed;
@@ -565,21 +591,16 @@ a {
 
 }
 
-@media only screen and (max-width: 600px) {
+.pil:hover {
+    transform: scale(1.1);
+}
 
-    header h1 {
-        color: #F4C0BA;
-        margin-left: 20px;
-        margin-top: 17px;
-        font-family: 'overskrift';
-        font-style: italic;
-        font-weight: 300;
-        font-size: 20px;
-
-    }
+@media only screen and (max-width: 1000px) {
 
     #menuknap {
-        padding-top: 7px;
+        padding-top: 30px;
+        cursor: pointer;
+
     }
 
     #om .col_tekst {
@@ -604,6 +625,8 @@ a {
         box-shadow: 3px 4px 10px -1px;
         text-align: center;
         max-width: 300px;
+
+
     }
 
     .col_container {
@@ -617,12 +640,10 @@ a {
         text-align: center;
         margin: 10px 0px 0px 0px;
         flex-grow: 2;
-        /*    flex-grow: 2;*/
         flex-basis: 500px;
         height: 180px;
         border-radius: 10px;
-        /*    display: flex;*/
-        /*        justify-content: center;*/
+
     }
 
     .farveboks_blaa {
@@ -632,11 +653,6 @@ a {
         height: 570px;
         background: #D1E5EF;
         border-radius: 20px;
-        /*    display: flex;*/
-        /*
-        justify-content: center;
-        align-items: center;
-*/
     }
 
     .farveboks_gul {
@@ -646,11 +662,6 @@ a {
         height: 720px;
         background: #F7F5D7;
         border-radius: 20px;
-        /*    display: flex;*/
-        /*
-        justify-content: center;
-        align-items: center;
-*/
     }
 
     .farveboks_pink {
@@ -660,11 +671,7 @@ a {
         height: 620px;
         background: #FBDAD4;
         border-radius: 20px;
-        /*    display: flex;*/
-        /*
-        justify-content: center;
-        align-items: center;
-*/
+
     }
 
     .farveboks_groen {
@@ -674,11 +681,6 @@ a {
         height: 620px;
         background: #D7E9D1;
         border-radius: 20px;
-        /*    display: flex;*/
-        /*
-        justify-content: center;
-        align-items: center;
-*/
     }
 
     h1 {
@@ -702,7 +704,6 @@ a {
         font-size: 20px;
 
     }
-
 }
 
 @media (orientation: landscape) {
